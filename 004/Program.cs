@@ -68,28 +68,28 @@
 // назвать массив, в () указать переменную размера, органичить числа какие берет рандом от мин до мах
 //[указать его ]
 
-int[] CreateRandomArray(int size, int minValue, int maxValue)
-{
-    int[] array = new int[size];
-    for(int i = 0; i < size; i ++)
-        array[i] = new Random().Next(minValue, maxValue + 1);
-    return array;
-}
+// int[] CreateRandomArray(int size, int minValue, int maxValue)
+// {
+//     int[] array = new int[size];
+//     for(int i = 0; i < size; i ++)
+//         array[i] = new Random().Next(minValue, maxValue + 1);
+//     return array;
+// }
 
-void ShowArray(int[] array)
-{
-    for(int i = 0; i < array.Length; i++)
-        Console.Write(array [i] + " ");
-    Console.WriteLine();
-}
+// void ShowArray(int[] array)
+// {
+//     for(int i = 0; i < array.Length; i++)
+//         Console.Write(array [i] + " ");
+//     Console.WriteLine();
+// }
 
-Console.Write("Введите количество элементов: ");
-int size = Convert.ToInt32(Console.ReadLine());
-Console.Write("Минимально возможное значение: ");
-int min = Convert.ToInt32(Console.ReadLine());
-Console.Write("Максисально возможное значение: ");
-int max = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите количество элементов: ");
+// int size = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Минимально возможное значение: ");
+// int min = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Максисально возможное значение: ");
+// int max = Convert.ToInt32(Console.ReadLine());
 
-int[] newArray = CreateRandomArray(size,min,max);
-ShowArray(newArray);
+// int[] newArray = CreateRandomArray(size,min,max);
+// ShowArray(newArray);
 
